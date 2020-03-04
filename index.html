@@ -59,7 +59,7 @@
 				</section>
 				<section>
 					<h1>model driven approach</h1>
-					<p>se concentre sur les modèles pour travailler avec les systèmes, y compris la sous-estimation, la conception, la construction, le déploiement, l'exploitation, la maintenance et la modification.</p>
+					<p>se concentre sur les modèles pour travailler avec les systèmes, y compris la conception, la construction, le déploiement, l'exploitation, la maintenance et la modification.</p>
 					<aside class="notes">
 							se concentrer sur les modèles pour travailler avec les systèmes, y compris la sous-estimation, la conception, la construction, le déploiement, l'exploitation, la maintenance et la modification
 					</aside>
@@ -73,25 +73,18 @@
 				</section>
 				<section>
 					<h1>MDA viewpoints</h1>
-					<aside class="notes">
-						C'est la qualité que le modèle est indépendant des caractéristiques d'une plate-forme de n'import quelle type
-					</aside>
-					<section class="fragment">
-						<aside class="notes">
-								Les détails du traitement du système sont cachés ou encore indéterminés						</aside>
-						<h3>Computation Independent Viewpoint</h3>
-						<p>Se concentre sur l'environnement et les exigences du système.</p>
+					<section>
+						<div class="fragment">
+							<h3>Computation Independent Viewpoint</h3>
+							<p>Se concentre sur l'environnement et les exigences du système.</p>
+						</div>
 					</section>
 
 					<section>
-						<aside class="notes">
-								Les détails du traitement du système sont cachés ou encore indéterminés</aside>
 						<h3>Plateform Independent Viewpoint</h3>
 						<p>Se concentre sur le fonctionnement d'un système tout en cachant les détails nécessaires pour une plate-forme particulière.</p>
 					</section>
 					<section>
-						<aside class="notes">
-								Les détails du traitement du système sont cachés ou encore indéterminés</aside>
 						<h3>Plateform Specific Viewpoint</h3>
 						<p>Ajoute des éléments spécifiques a une plateforme</p>
 					</section>
@@ -105,27 +98,124 @@
 					<aside class="notes">
 						C'est la qualité que le modèle est indépendant des caractéristiques d'une plate-forme de n'import quelle type
 					</aside>
-					<section class="fragment">
-						<aside class="notes">
-								Les détails du traitement du système sont cachés ou encore indéterminés						</aside>
-						<h3>Computation Independent Models</h3>
-						<p>le modéle selon la vue Computation Independent Viewpoint , c’est-à-dire sans les détails de la structure du systéme. Il correspond aussi au modéle du domaine</p>
+					<section>
+						<div class="fragment">
+							<h3>Computation Independent Models</h3>
+							<p>le modéle selon la vue Computation Independent Viewpoint , c’est-à-dire sans les détails de la structure du systéme. Il correspond aussi au modéle du domaine</p>
+						</div>
 					</section>
 
 					<section>
-						<aside class="notes">
-							Les détails du traitement du système sont cachés ou encore indéterminés
-						</aside>
 						<h3>Plateform Independent Models</h3>
 						<p>C'est une vue d'un système PIV. Un PIM présente un degré spécifié d'indépendance de plate-forme afin de pouvoir être utilisé avec un certain nombre de plates-formes différentes de type similaire</p>
 					</section>
 					<section>
-						<aside class="notes">
-								Les détails du traitement du système sont cachés ou encore indéterminés</aside>
 						<h3>Plateform Specific Models</h3>
 						<p>C'est une vue d'un système PSV. Un PSM combine les spécifications du PIM avec les détails qui spécifient comment ce système utilise un type particulier de plateforme. C'est un PSM plus détailés</p>
 					</section>
 					
+				</section>
+
+				<section>
+					<h3>MDA Cycle de vie</h3>	
+					<img src="img/lifecycle.png" height="550" width="450" alt="">
+				</section>
+
+				<section>
+					<aside class="notes">
+							MDA est solution , mais a quelle problems ?
+					</aside>
+					<ul>
+						<div class="fragment">
+							<li>Evolution tres rapide des nouvelles technologies</li>
+						</div>
+						<div class="fragment">
+							<li>Remise en cause des infrastructure</li>
+						</div>
+						<div class="fragment">
+							<li>Remise en cause des besoins</li>
+						</div>
+						
+					</ul>
+
+				</section>
+				<section>
+					<aside class="notes">
+					</aside>
+					<h3>Avantage</h3>
+					<ul>
+						<div class="fragment">
+							<li>Productivité</li>
+						</div>
+						<div class="fragment">
+							<li>Intérobérabilité</li>
+						</div>
+						<div class="fragment">
+							<li>Réutilisabilité</li>
+						</div>
+						<div class="fragment">
+							<li>Documentation</li>
+						</div>
+						
+					</ul>
+
+				</section>
+
+				<section>
+					<aside class="notes">
+					</aside>
+					<h3>Inconvinion</h3>
+					<ul>
+						<div class="fragment">
+							<li>Métrise de métier</li>
+						</div>
+						<div class="fragment">
+							<li>Maindeuvre rare</li>
+						</div>
+						<div class="fragment">
+							<li>N'est pas adopter au différent type de système</li>
+						</div>
+						
+					</ul>
+
+				</section>
+				<section>
+					<h3>MDA Usage</h3>
+					<section>
+						<div class="fragment">
+							<h5>Processus de base</h5>
+							<div class="fragment">
+								<img src="img/mda_basic_process.gif" alt="">
+							</div>
+							<div class="fragment">
+								<p>Le principal défi est la transformation entre les différents modèles.</p>
+							</div>
+						</div>
+						<aside class="notes">
+								En principe, le processus de construction commence par la définition du modèle
+								 indépendant de calcul ou modèle de domaine
+								Ce CIM sera défini par un analyste métier
+								Le CIM sera transformé en un PIM par un architecte d'entreprise.
+						</aside>
+					</section>
+
+					<section>
+						<div class="fragment">
+							<h5>processus pour les systèmes complexes</h5>
+							<div class="fragment">
+								<img src="img/mda_full_process.gif" alt="">
+							</div>
+							<div class="fragment">
+								<p>Il n'y a plus de séparation stricte entre les différentes couches.</p>
+							</div>
+						</div>
+						<aside class="notes">
+								Dans la pratique, le processus de CIM à PSM peut être beaucoup plus complexe.
+								Dans cet ensemble global de modèles, des transformations horizontales peuvent se produire dans une seule couche d'abstraction.
+								example Le PSM lui-même peut être traduit en PSM plus détaillé jusqu'à ce que le niveau de mise en œuvre soit atteint.
+								Ces transformations horizontales s'ajoutent à la transformation verticale des modèles à travers les couches.
+						</aside>
+					</section>
 				</section>
 			</div>
 		</div>
